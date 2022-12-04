@@ -45,12 +45,8 @@ a {
     color: #958065;
 }
 
-.nav-link {
-    transition: 0.7s ease;
-}
-.nav-link:hover {
-    color: dodgerblue;
-}
+.nav-link {transition: 0.7s ease;}
+.nav-link:hover {color: dodgerblue;}
 
 .hamburger {
     display: none;
@@ -68,18 +64,12 @@ a {
 }
 
 @media (max-width:768px) {
-    .hamburger {
-        display: block;
-    }
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
+    html {font-size: 10px;    }
+
+    .hamburger {display: block;}
+    .hamburger.active .bar:nth-child(2) {opacity: 0;    }
+    .hamburger.active .bar:nth-child(1) {transform: translateY(8px) rotate(45deg);}
+    .hamburger.active .bar:nth-child(3) {transform: translateY(-8px) rotate(-45deg);    }
 
     .nav-menu {
         position: fixed;
@@ -95,13 +85,9 @@ a {
         transition: 0.3s;
     }
 
-    .nav-item {
-        margin: 16px 0;
-    }
+    .nav-item {margin: 16px 0;}
 
-    .nav-menu.active {
-        left: 0;
-    }
+    .nav-menu.active {left: 0;}
 }
 
 .cover {
@@ -114,37 +100,38 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     vertical-align: middle;
     justify-content: center;
     gap: 10vw;
 }
+
 .cover img {
     width: 30vw;
     height: auto;
     border: 2px solid #be3327;
 }
+
 .cover-content {
     color: white;
     width: 30vw;
     vertical-align: middle;
 }
-.cover h2 {
-    color: #be3327;
-}
+
+.cover h2 {color: #be3327;}
+
 .cover h1 {
     color: #958065;
     font-family: cursive;
     font-size: 4rem;
     margin-bottom: 1rem;
 }
-.cover p {
-    line-height: 1.5;
-}
 
-.career {
-    padding: 5rem;
-}
+.cover p {line-height: 1.5;}
+
+.career {padding: 5rem;}
+
 .title {
     font-size: 3rem;
     margin-top: 2rem;
@@ -153,9 +140,9 @@ a {
     margin-bottom: 4rem;
     width: 60vw;
 }
-.mark {
-    color: #958065;
-}
+
+.mark {color: #958065;}
+
 .career-content {
     width: 60vw;
     margin: auto;
@@ -163,34 +150,35 @@ a {
     flex-direction: column;
     flex-wrap: wrap;
 }
+
 .card {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 5rem;
 }
+
 .career img {
     height: 15vw;
     width: 15vw;
 }
+
 .card-text{
     text-indent: 1rem;
     line-height: 1.3;
 }
+
 .what{
     border-left: 1px solid #be3327;
     margin-bottom: 0.5rem;
 }
-.who {
-    color: #958065;
-}
-.when {
-    color: #717273;
-}
 
-.qualities {
-    padding: 5rem;
-}
+.who {color: #958065;}
+
+.when {color: #717273;}
+
+.qualities {padding: 5rem;}
+
 .qualities-content {
     width: 60vw;
     display: flex;
@@ -200,6 +188,7 @@ a {
     margin: auto;
     font-size: 1.2rem;
 }
+
 .qualities-content span {
     z-index: -1;
     color: rgba(113, 114, 115, 0.3);
@@ -210,31 +199,75 @@ a {
     top: 0.7rem;
 }
 
-.achievements {
-    padding: 5rem;
-}
+.achievements {padding: 5rem;}
+
 .achievements-content {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     width: 60vw;
     margin: auto;
-    /* border: 2px solid white; */
+}
+
+.courses {
+    padding: 5rem;
+    position: relative;
+    background-image: url(/images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.courses-content {
+    width: 60vw;
+    margin: auto;
+    line-height: 1.5;
+}
+
+.year {
+    color: #958065;
+    margin-top: 4rem;
+    margin-bottom: 0.5rem;
+    border-left: 0.5px solid #be3327;
+    text-indent: 1rem;
+}
+
+.subtitle {color: #958065;}
+
+.semester {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    color: #717273;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.defo {
+    min-width: 45vw;
+    max-width: 45vw;
+    padding-left: 1rem;
 }
 
 #contact {
     display: flex;
-    /* margin: auto; */
-    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     margin-top: 8rem;
     padding: 2rem;
-    gap: 1rem;
-    /* border: 2px solid white; */
 }
+
 #contact img {
-    /* border: 2px solid white; */
     width: 5rem;
     height: auto;
 }
