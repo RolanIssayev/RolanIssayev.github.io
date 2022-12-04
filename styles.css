@@ -31,7 +31,7 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
-    font-family: cursive;
+    font-family: Georgia, serif;
 }
 
 .nav-menu {
@@ -127,7 +127,7 @@ a:hover {
 
 .cover h1 {
     color: #958065;
-    font-family: cursive;
+    font-family: Georgia, serif;
     font-size: 4rem;
     margin-bottom: 1rem;
 }
